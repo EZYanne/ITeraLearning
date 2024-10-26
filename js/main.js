@@ -49,11 +49,11 @@
             $('.back-to-top').fadeOut('slow');
         }
     });
+
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -63,6 +63,19 @@
         loop: true,
         items: 1
     });
-    
-})(jQuery);
 
+    // Dropdown toggle for Year Subjects
+    $('.dropdown-toggle').on('click', function(e) {
+        e.preventDefault();
+        const dropdownMenu = $(this).next('.dropdown-menu');
+        const isVisible = dropdownMenu.is(':visible');
+
+        // Close all dropdowns
+        $('.dropdown-menu').slideUp();
+
+        // Toggle current dropdown
+        if (!isVisible) {
+            dropdownMenu.slideDown();
+        }
+    });
+})(jQuery);

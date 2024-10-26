@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8bbd78; /* Updated background color for the body */
+}
+
+/* Header styles */
+.header {
+    background-color: #355E3B; /* Background color for the header */
+    border: 2px solid #d0ff00; /* Border around the header */
+    padding: 10px; /* Padding inside the header */
+    border-radius: 8px; /* Rounded corners for the header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.header-content {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center items */
+}
+
+.header h1 {
+    color: #ffffff; /* White text for the title */
+    font-size: 2.5rem; /* Increased font size for prominence */
+    margin: 0; /* Remove default margin */
+}
+
+/* Logo styles */
+.logo {
+    width: 50px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between logo and title */
+    vertical-align: middle; /* Aligns logo vertically with text */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #355E3B; /* Consistent background color with header */
+    border-radius: 8px;
+    box-shadow: 0 0 10px #d0ff00; /* Box shadow for the container */
+}
+
+h1{
+    color: white;
+    font-size: 20px;
+}
+
+h2 {
+    color: #ffffff; /* White color for headers */
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: #ffffff; /* White color for headers */
+    margin-top: 15px;
+    font-size: 1.8rem;
+}
+
+h4, h5 {
+    color: white; /* White color for headers */
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+/* Styling for lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e2e2e2; /* Light background for list items */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #d0d0d0; /* Hover effect for list items */
+}
+
+li a {
+    display: block; /* Make the link block-level for full height */
+    color: #000000; /* Black text for links */
+    font-size: 1rem;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+li a:hover {
+    color: #0056b3; /* Link hover color */
+}
+
+a {
+    color: #007BFF; /* Default link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: black; /* Link hover color */
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-image: linear-gradient(160deg, #8ceabb 0%, #378f7b 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-image: linear-gradient(160deg, #378f7b 0%, #8ceabb 100%);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reduced padding for small screens */
+    }
+
+    .header h1, h2, h3, h4 {
+        font-size: 1.2rem; /* Responsive font sizes */
+    }
+
+    .button {
+        width: 100%; /* Full-width buttons on small screens */
+    }
+}

@@ -1,0 +1,304 @@
+/* Header styles */
+.header {
+    position: fixed; /* Keeps header at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    z-index: 1000; /* Stays above other content */
+    background-color: #355E3B; /* Header background color */
+    border: 2px solid #d0ff00; /* Header border */
+    padding: 10px; /* Header padding */
+    border-radius: 8px; /* Header rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+    margin-bottom: 0; /* Remove margin for fixed positioning */
+}
+
+.header-content {
+    display: flex; /* Flexbox for header items */
+    align-items: center; /* Vertically center items */
+}
+
+
+
+.header h1 {
+    color: #ffffff; /* Header title color */
+    font-size: 2.5rem; /* Header title font size */
+    margin: 0; /* Remove default margin */
+}
+
+.header h5 {
+    color: green; /* Header title color */
+    font-size: 2.5rem; /* Header title font size */
+    margin: 0; /* Remove default margin */
+    
+}
+
+.header h6 {
+    color: orange; /* Header title color */
+    font-size: 2.5rem; /* Header title font size */
+    margin: 0; /* Remove default margin */
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5 {
+    color: white; /* Common heading color */
+    margin-top: 20px; /* Space above headings */
+}
+
+h1 {
+    font-size: 25px; /* H1 font size */
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2rem; /* H2 font size */
+    color: white; /* Primary text color */
+    font-style: oblique;
+}
+
+h3 {
+    font-size: 1.8rem; /* H3 font size */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+}
+
+/* Full-screen body setup */
+body {
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    background-image: url('your-image-path.jpg'); /* Optional: Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Logo styles */
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+/* Background for the entire body */
+body {
+    background-color: #ffffff; /* Dark background for body */
+    color: #FFFFFF; /* Optional: Set text color for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Background and styling for the category container */
+.container {
+    max-width: 80%; /* Adjust width as needed */
+    margin: 50px auto;
+    padding: 100px;
+    background: #8bbd78; /* Background specific to the container */
+    border-radius: 0px; /* Optional: Rounded corners */
+    box-shadow: 0 0 10px #48ff00; /* Glow effect */
+}
+
+/* Container for category items */
+.category-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: center; /* Center items horizontally */
+    gap: 100px; /* Adjust space between items */
+    padding: 20px 0; /* Padding at the top and bottom */
+}
+
+/* Styles for the category items */
+.cat-item {
+    flex: 0 1 30%; /* Adjust the width to show 3 items per row on large screens */
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cat-item img {
+    width: 100%; /* Full width for images */
+    height: 220px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the images cover the area without distortion */
+    display: block; /* Remove bottom space in images */
+    transition: .5s; /* Smooth transition for scaling */
+}
+
+/* Scale the image on hover */
+.cat-item:hover img {
+    transform: scale(1.1); /* Scale the image */
+
+}
+
+/* Moving glow effect */
+.cat-item:hover {
+    animation: glowAnimation 2s infinite; /* Infinite glow animation */
+}
+
+/* Overlay styles */
+.cat-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Center text for overlay */
+.cat-overlay h4 {
+    text-align: center;
+    color: white;
+}
+
+/* Item list styles */
+li {
+    background: #e2e2e2; /* Item background */
+    margin: 5px 0; /* Margin between items */
+    padding: 10px; /* Item padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+li:hover {
+    background: #d0d0d0; /* Background on hover */
+}
+
+li a {
+    display: block; /* Block display for links */
+    color: #000000; /* Link color */
+    font-size: 1rem; /* Link font size */
+    text-decoration: none; /* Remove underline */
+    width: 100%; /* Full width for links */
+    height: 100%; /* Full height for links */
+}
+
+li a:hover {
+    color: #0056b3; /* Link color on hover */
+}
+
+a {
+    color: #ffffff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: rgb(0, 0, 0); /* Link color on hover */
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-image: linear-gradient(160deg, #8ceabb 0%, #378f7b 100%);
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.button:hover {
+    background-image: linear-gradient(160deg, #378f7b 0%, #8ceabb 100%); /* Button hover background */
+}
+
+/* Overlay styles */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+    z-index: 1; /* Sit on top */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+.overlay-content {
+    position: relative;
+    top: 3%; /* Move overlay lower */
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto; /* Center overlay */
+    background-color: #355E3B; /* Overlay background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the border */
+    text-align: center; /* Center text */
+    color: white; /* Text color */
+}
+
+.overlay-content h2 {
+    margin: 0; /* Remove default margin */
+    padding: 12px 0; /* Reduce padding for header */
+    font-size: 1.5rem; /* Header font size */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Padding for small screens */
+    }
+
+    .header h1, h2, h3, h4, h5{
+        font-size: 1.2rem; /* Adjust font size for small screens */
+    }
+
+    .cat-item {
+        flex: 0 1 100%; /* Full width on small screens */
+    }
+
+    .button {
+        width: 100%; /* Full width for button */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cat-item {
+        flex: 1 1 100%; /* Stack items on smaller screens */
+    }
+}
+
+/* Keyframes for the glowing shadow animation */
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0px 0px 15px 5px rgba(255, 244, 165), 
+                    0px 0px 30px 10px rgba(255, 244, 170), 
+                    0px 0px 45px 15px rgba(254, 217, 50);
+    }
+    25% {
+        box-shadow: -15px 0px 15px 5px rgba(255, 244, 165), 
+                    -30px 0px 30px 10px rgba(255, 244, 170), 
+                    -45px 0px 45px 15px rgba(254, 217, 50);
+    }
+    50% {
+        box-shadow: -15px -15px 15px 5px rgba(255, 244, 165), 
+                    -30px -30px 30px 10px rgba(255, 244, 170), 
+                    -45px -45px 45px 15px rgba(254, 217, 50);
+    }
+    75% {
+        box-shadow: 0px -15px 15px 5px rgba(255, 244, 165), 
+                    0px -30px 30px 10px rgba(255, 244, 170), 
+                    0px -45px 45px 15px rgba(254, 217, 50);
+    }
+    100% {
+        box-shadow: 15px 0px 15px 5px rgba(255, 244, 165), 
+                    30px 0px 30px 10px rgba(255, 244, 170), 
+                    45px 0px 45px 15px rgba(254, 217, 50);
+    }
+}
